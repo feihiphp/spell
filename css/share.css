@@ -1,0 +1,23 @@
+/*设置单位大小*/
+body{
+    position: relative;
+}
+#BgDiv1 {
+    background-color: #000;
+    position: absolute;
+    z-index: 9;
+    display: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6 !important;
+    filter: alpha(opacity=60);
+}
+.fx-btn{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 50%;
+	z-index: 9999;
+}

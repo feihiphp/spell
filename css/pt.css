@@ -1,0 +1,277 @@
+/* 拼团css */
+.pt-page-left{
+    float: left;
+    height: 40px;
+}
+.pt-page-left img{
+    height: 24px;
+    vertical-align: middle;
+}
+.pt-we-title{
+    padding: 5px 24px;
+}
+.pt-share{
+    float: right;
+    height: 40px;
+}
+.pt-share img{
+    height: 24px;
+    vertical-align: middle;
+}
+.pt-cd-time{
+    display: inline-block;
+    height: 40px;
+}
+.pt-cd-time-col1{
+    line-height: 15px;
+    font-size: 12px;
+    color: #666;
+}
+.pt-cd-time-col2{
+    line-height: 25px;
+    font-size: 16px;
+    color: #555;
+}
+.pt-col1-area1{
+    color: #d00a04;
+    font-size: 0.75rem;
+}
+.pt-col1-area1 span{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.pt-col1-area2{
+    color: #999;
+}
+.pt-col1-area2 span{
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+.comm-pt-explain a img{
+    width: 100%;
+}
+.m-progress {
+  width: 70%;
+  overflow: hidden;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.m-progress-bar {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #d10a05;
+}
+.pt-schedule{
+    padding: 10px 15px;
+}
+.pt-schedule h1{
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #010101;
+    margin-bottom: 0.65rem;
+}
+.pt-m-person{
+    font-size: 0.7rem;
+    color: #010101;
+    text-align: center;
+    margin-top: 0.65rem;
+}
+.pt-kj-main{
+    font-size: 0.7rem;
+    color: #010101;
+    text-align: center;
+    margin-top: 0.65rem;
+}
+.pt-zjz-user-end{
+    font-size: 0.7rem;
+    color: #010101;
+    text-align: center;
+    margin-top: 0.65rem;
+}
+.pt-m-person-n1{
+    color: #cf0900;
+}
+.pt-m-person-n2{
+    color: #cf0900;
+}
+.pt-kj-time{
+    color: #cf0900;
+}
+.pt-zjz-username-end{
+    color: #cf0900;
+}
+.pt-ms-seckill{
+	background-color: #e81f18;
+	width: 100%;
+	float: left;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	color: #fff;
+	border: 0;
+}
+.pt-ms-seckill-end{
+	background-color: #e81f18;
+	width: 100%;
+	float: left;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	color: #fff;
+	border: 0;
+}
+.pt-ms-prempt{
+    background-color: #e81f18;
+	width: 100%;
+	float: left;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	color: #fff;
+	border: 0;
+}
+/* 秒杀专区css */
+.pt-tab{
+    background-color: #fff;
+    overflow: hidden;
+    height: 100%;
+}
+.pt-tab li span{
+    background-color: #fff;
+    color: #d00a04;
+}
+.pt-tab-li{
+    border-bottom: 2px solid #999;
+}
+.pt-active{
+    border-bottom: 2px solid #d00a04;
+}
+.pt-col-banner{
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+.pt-top{
+    overflow: hidden;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+.pt-top-img{
+    width: 1.5rem;
+    height: 1.2rem;
+    float: left;
+}
+.pt-top-num{
+    float: left;
+    margin-left: 10px;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    color: #d00a04;
+}
+.pt-col-cp-title{
+    font-size: 0.75rem;
+    color: #000;
+    padding-bottom: 5px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pt-col1-cp-main{
+    padding: 5px 15px;
+    background-color: #fff;
+}
+.pt-col{
+    background-color: #eee;
+}
+.pt-col1-cont{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.txwbtn{
+    background-color: #d10a05;
+    color: #fff;
+    font-size: 0.75rem;
+    border: 1px solid #d10a05;
+    padding: 3px 20px;
+    border-radius: 10px;  
+    cursor: pointer;
+    z-index: 1000;
+}
+.ytxbtn{
+    background-color: #fff;
+    color: #d10a05;
+    border: 1px solid #d10a05;
+    font-size: 0.75rem;
+    padding: 3px 20px;
+    border-radius: 10px; 
+    display: none; 
+    cursor: pointer;
+    z-index: 1000;
+}
+.pt-area-button{
+    background-color: #d10a05;
+    color: #fff;
+    font-size: 0.75rem;
+    border: 1px solid #d10a05;
+    padding: 3px 20px;
+    border-radius: 10px;  
+    cursor: pointer;
+}
+.pt-a{
+    display: block;
+}
+.pt-banner-main{
+    position: relative;
+}
+.pt-banner-time{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    border-radius: 5px;
+    background-color: rgba(9, 9, 9, .6);
+    color: #fff;
+    padding: 0px 5px;
+}
+.pt-banner-time p{
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    padding: 0px 5px;
+}
+.col1-time{
+    margin-left: 5px;
+}
+.pt-zjz-tx{
+    text-align: center;
+    position: relative;
+}
+.pt-zjz-tx-col1{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    position: absolute;
+    top:-0.8rem;
+    left: 50%;
+    margin-left: -0.8rem;
+    display: inline-block;
+}
+.pt-zjz-tx-col2{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.pt-zjz-user{
+    font-size: 0.7rem;
+    text-align: center;
+}
+.pt-zjz-username{
+    color: #cf0900;
+}
