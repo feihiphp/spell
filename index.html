@@ -34,8 +34,8 @@
 </head>  
 <body>
     <div class="bottom">
-        <input class="aInput" type="text" placeholder="ios聚焦后会被输入法遮挡" />
-        <input class="bInput" type="text" placeholder="ios聚焦后不会被输入法遮挡" />
+        <input class="aInput" type="text" placeholder="聚焦后会被输入法遮挡" />
+        <input class="bInput" type="text" placeholder="聚焦后不会被输入法遮挡" />
     </div>
 </body>  
 <script>  
@@ -48,6 +48,7 @@
             timer = setInterval(function() {
                 if(index>5) {
                     $('body').scrollTop(1000000);
+                    $(window).height(1000000);
                     clearInterval(timer);
                 }
                 index++;
