@@ -1,62 +1,47 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>  
-    <title>demo</title>  
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
 
-    <style>  
-        * {  
-            margin: 0;   
-            padding: 0;  
-        }  
-        body, html {  
-            width: 100%;  
-            height: 100%;
-        }  
-        .bottom {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            font-size: 0;
-        }
-        input {
-            font-size: 14px;
-            box-sizing: border-box;
-            width: 50%;
-            height: 50px;
-            line-height: 50px;
-        }
-    </style>  
-</head>  
-<body>
-    <div class="bottom">
-        <input class="aInput" type="text" placeholder="聚焦后会被输入法遮挡" />
-        <input class="bInput" type="text" placeholder="聚焦后不会被输入法遮挡" />
-    </div>
-</body>  
-<script>  
-    $(function() {
-        // 解决输入法遮挡
-        var timer = null;
-        $('.bInput').on('focus', function() {
-            clearInterval(timer);
-            var index = 0;
-            timer = setInterval(function() {
-                if(index>5) {
-                    $('body').scrollTop(1000000);
-                    $(window).height(1000000);
-                    clearInterval(timer);
-                }
-                index++;
-            }, 50)
-        })
-    });
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>移动端输入法挡住输入框</title>
+        <style>
+            input {
+                width: 100%;
+                line-height: 1.5rem;
+                border: 1px solid red;
+            }
+            
+            .block-fill {
+                height: 500px;
+            }
+        </style>
+    </head>
 
+    <body>
 
+        <div id="main">
+            <!--占位div-->
+            <div class="block-fill"></div>
+            <!--需要聚焦-->
+            <input id="input" type="text"></input>
+        </div>
 
-</script>  
+    </body>
+    <script>
+        //获取页面高度
+        var clientHeight = document.body.clientHeight;
+        //设置监听聚焦事件
+        document.body.addEventListener("focus", function(e) {
+            var focusElem = document.getElementById('input')
+        }, true);
+        //设置监听窗口变化时间
+        window.addEventListener("resize", function() {
+            if(focusElem && document.body.clientHeight < clientHeight) {
+                //使用scrollIntoView方法来控制输入框
+                focusElem.scrollIntoView(false);
+            }
+        });
+    </script>
+
 </html>
